@@ -11,8 +11,11 @@
         7. Decision of judges will be final and binding.'''  #this should be formatted and shortened to be printed at the begining of the event
 
 def start(): #call this function after printing guidelines
-    print('WELCOME TO KRYPTOS')
-    print('')#Add somekind of storyline or plot (maybe)
+    print("WELCOME TO KRYPTOS") #Would be cool if some typing animation is added
+    print(">> Mission log: Vault 71") #some story line that gives hint for the first clue
+    print(">> We cannot continue further without access to the Core. The bossman said it was built by [REDACTED].")
+    print(">> The deeper we go, the more i realize his vault wasn't built to keep people out but to keep something in")
+    print(">> They left us some messages to decrypt. This one seems shifted.")
     q0()
 
 def q0():
@@ -42,4 +45,4 @@ def q2():
             print('bruh cringe')
     q3()
     
-    
+
