@@ -1,4 +1,14 @@
 #kryptos event source code
+import sys
+import time
+
+#typeanimation
+def typestring(text, delay=0.05): #use this function to add type animation to strings
+    for char in text:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(delay)
+    print()  
 
 #guidelines
 '''Guidelines 
@@ -11,14 +21,14 @@
         7. Decision of judges will be final and binding.'''  #this should be formatted and shortened to be printed at the begining of the event
 
 def start(): #call this function after printing guidelines
-    print("WELCOME TO KRYPTOS") #Would be cool if some typing animation is added
-    print(">> Mission log: Vault 71") #some story line that gives hint for the first clue
-    print(">> We cannot continue further without access to the Core. The bossman said it was built by [REDACTED].")
-    print(">> The deeper we go, the more i realize his vault wasn't built to keep people out but to keep something in")
-    print(">> They left us some messages to decrypt. This one seems shifted.")
+    typestring("WELCOME TO KRYPTOS") 
+    typestring(">> Mission log: Vault 71") #some story line that gives hint for the first clue
+    typestring(">> We cannot continue further without access to the core. The bossman said it was built by [REDACTED].")
+    typestring(">> The deeper we go, the more i realize his vault wasn't built to keep people out but to keep something in")
+    typestring(">> They left us some messages to decrypt. This one seems shifted.")
     q0()
 
-def q0():
+def q0(): #caesar cypher shifted by 
     while True:
         response = input('Code 0 : ')
         if response == 'dummycode':
@@ -43,6 +53,5 @@ def q2():
             break
         else:
             print('bruh cringe')
-    q3()
-    
 
+start()
