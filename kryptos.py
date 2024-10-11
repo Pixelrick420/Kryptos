@@ -29,10 +29,10 @@ def start(): #call this function after printing guidelines
     q0()
 
 def q0(): #caesar cypher shifted by 11 that has to be bruteforced (example qn, may change)
-    typestring("PYEPC_ESP_NLELNZXMD")
+    typestring("PYEPCESPNLELNZXMD")
     while True:
         response = input('Code 0 : ')
-        if response == 'ENTER_THE_CATACOMBS':
+        if response == 'ENTERTHECATACOMBS':
             typestring(">> The next one might not be that easy")
             break
         else:
