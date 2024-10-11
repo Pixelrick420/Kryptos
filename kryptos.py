@@ -28,13 +28,15 @@ def start(): #call this function after printing guidelines
     typestring(">> They left us some messages to decrypt. This one seems shifted.")
     q0()
 
-def q0(): #caesar cypher shifted by 
+def q0(): #caesar cypher shifted by 11 that has to be bruteforced (example qn, may change)
+    print("PYEPC_ESP_NLELNZXMD")
     while True:
         response = input('Code 0 : ')
-        if response == 'dummycode':
+        if response == 'ENTER_THE_CATACOMBS':
+            typestring(">> The next one might not be that easy")
             break
         else:
-            print('bruh cringe')
+            typestring(">> That doesn't seem right, I should rethink this")
     q1()
     
 def q1():
