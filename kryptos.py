@@ -20,6 +20,8 @@ def q0():
         response = input('Code 0 : ')
         if response == 'dummycode':
             break
+        else:
+            print('bruh cringe')
     q1()
     
 def q1():
@@ -27,6 +29,8 @@ def q1():
         response = input('Code 1 : ')
         if response == 'dummycode':
             break
+        else:
+            print('bruh cringe')
     q2()
 
 def q2():
@@ -34,6 +38,8 @@ def q2():
         response = input('Code 2 : ')
         if response == 'dummycode':
             break
+        else:
+            print('bruh cringe')
     q3()
     
     
