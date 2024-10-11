@@ -3,7 +3,7 @@ import sys
 import time
 
 #typeanimation
-def typestring(text, delay=0.05): #use this function to add type animation to strings
+def typestring(text, delay=0.01): #use this function to add type animation to strings
     for char in text:
         sys.stdout.write(char)
         sys.stdout.flush()
@@ -24,12 +24,12 @@ def start(): #call this function after printing guidelines
     typestring("WELCOME TO KRYPTOS") 
     typestring(">> Mission log: Vault 71") #some story line that gives hint for the first clue
     typestring(">> We cannot continue further without access to the core. The bossman said it was built by [REDACTED].")
-    typestring(">> The deeper we go, the more i realize his vault wasn't built to keep people out but to keep something in")
+    typestring(">> This vault wasn't built to keep people out, but to keep [REDACTED] in")
     typestring(">> They left us some messages to decrypt. This one seems shifted.")
     q0()
 
 def q0(): #caesar cypher shifted by 11 that has to be bruteforced (example qn, may change)
-    print("PYEPC_ESP_NLELNZXMD")
+    typestring("PYEPC_ESP_NLELNZXMD")
     while True:
         response = input('Code 0 : ')
         if response == 'ENTER_THE_CATACOMBS':
