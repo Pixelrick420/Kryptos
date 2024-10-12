@@ -63,6 +63,7 @@ def q1(): #caesar cypher shifted by 11
 
 def q2(): #logic circuit
     typestring(">> If the output is to be seventeen, how must the switches be toggled?")
+    print("(code will be an 8 bit binary number)")
     while True:
         response = input('Code 2 : ')
         if response == '10010101':
