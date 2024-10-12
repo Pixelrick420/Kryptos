@@ -40,7 +40,7 @@ def q0(): # Math ,Number of trailing zeros in 75P45
                 typestring(">> A low hum fills the room accompanied by the grinding of metal as colossal gears engage with a slow, deliberate clunk, opening the vault door")
                 break
             else:
-                typestring(">> Whoa, wrong input... the system's rejecting it.")
+                typestring(">> Whoa, wrong input... the system's rejecting it.", 0.5)
     q1()
 
 def q1(): #caesar cypher shifted by 11
@@ -54,7 +54,7 @@ def q1(): #caesar cypher shifted by 11
             typestring(">> The next one might not be that easy")
             break
         else:
-            typestring(">> That doesn't seem right, I should rethink this")
+            typestring(">> That doesn't seem right, I should rethink this", 0.5)
     q2()
 
 def q2():
