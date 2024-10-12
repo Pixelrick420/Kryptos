@@ -9,7 +9,9 @@ def typestring(text, delay=0.01): #use this function to add type animation to st
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(delay)
-    print()  
+    print() 
+
+slowtime = 0.05 #give this as delay for wrong answer so that they can't bruteforce 
 
 #guidelines
 '''Guidelines 
@@ -24,14 +26,13 @@ def typestring(text, delay=0.01): #use this function to add type animation to st
 def start(): #call this function after printing guidelines
     typestring("WELCOME TO KRYPTOS") 
     typestring(">> Mission log: Vault 71") #some story line that gives hint for the first clue
-    typestring(">> We cannot continue further without access to the core. The bossman said it was built by [REDACTED].")
-    typestring(">> This vault wasn't built to keep people out, but to keep [REDACTED] in")
+    typestring(">> We cannot continue further without access to the core. The bossman said it was built in 19XX by [REDACTED].")
+    typestring(">> The vault door looks like it wasn't built to keep people out..... but to keep something in.")
     typestring(">> Opening the door requires a pin.")
     q0()
 
 
 def q0(): # Math ,Number of trailing zeros in 75P45
-    print("\n")
     typestring("Number of trailing zeros in ⁷⁵P₄₅")
     while True:
 
@@ -40,11 +41,10 @@ def q0(): # Math ,Number of trailing zeros in 75P45
                 typestring(">> A low hum fills the room accompanied by the grinding of metal as colossal gears engage with a slow, deliberate clunk, opening the vault door")
                 break
             else:
-                typestring(">> Whoa, wrong input... the system's rejecting it.", 0.5)
+                typestring(">> Whoa, wrong input... the system's rejecting it.", slowtime)
     q1()
 
 def q1(): #caesar cypher shifted by 11
-    print("\n")
     typestring(">> Looks like someone's been here before. There are cryptic symbols etched onto the walls.")
     typestring(">> This one seems shifted. Maybe the pin has something to do with it.")
     typestring("ESPZFEAFETDDPGPYEPPY")
@@ -55,13 +55,13 @@ def q1(): #caesar cypher shifted by 11
             typestring(">> A series of dim candles light illuminating 8 switches that line the bottom of the opposing stone wall.")
             typestring(">> The switches are slightly misaligned, as though they were shifted or tampered with. ")
             typestring(">> The candles flicker gently, casting eerie shadows that dance across a familiar diagram, one of a logic circuit.")
+            break
         else:
-            typestring("That doesn't make any sense. Maybe I should reconsider my approach. The answer might be important.", 0.5)
+            typestring(">> That doesn't make any sense. Maybe I should reconsider my approach. The answer might be important.", slowtime)
     q2()
 
 def q2():
-    print("\n")
-    typestring("If the output is seventeen, how should the switches be toggled?")
+    typestring(">> If the output is seventeen, how should the switches be toggled?")
     while True:
         response = input('Code 2 : ')
         if response == '10010101':
@@ -69,6 +69,6 @@ def q2():
             typestring(">> A faint sound of some machine activating fills the room.")
             break
         else:
-            typestring(">> Carefully adjusting the switches causes a low spark that dies out slowly, that doesn't seem right, I should rethink this", 0.5)
+            typestring(">> Carefully adjusting the switches causes a low spark that dies out slowly. That doesn't seem right, I should rethink this", slowtime)
 
 start()
