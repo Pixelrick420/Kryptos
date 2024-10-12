@@ -47,17 +47,20 @@ def q1(): #caesar cypher shifted by 11
     print("\n")
     typestring(">> Looks like someone's been here before. There are cryptic symbols etched onto the walls.")
     typestring(">> This one seems shifted. Maybe the pin has something to do with it.")
-    typestring("PYEPCESPNLELNZXMD")
+    typestring("ESPZFEAFETDDPGPYEPPY")
     while True:
         response = input('Code 1 : ')
-        if response == 'ENTERTHECATACOMBS':
-            typestring(">> The next one might not be that easy")
-            break
+        if response == 'THEOUTPUTISSEVENTEEN':
+            typestring(">> A series of dim candles light illuminating 8 switches that line the bottom of the ancient stone wall.")
+            typestring(">> The switches seem slightly misaligned, like they were shifted or tampered with. ")
+            typestring(">> The candles flicker gently, casting eerie shadows that dance across a familiar diagram, one of a logic circuit.")
         else:
-            typestring(">> That doesn't seem right, I should rethink this", 0.5)
+            typestring(">> Carefully adjusting the switches causes a low spark that dies out slowly, that doesn't seem right, I should rethink this", 0.5)
     q2()
 
 def q2():
+    print("\n")
+    typestring("If the output is seventeen, how should the switches be toggled?")
     while True:
         response = input('Code 2 : ')
         if response == 'dummycode':
