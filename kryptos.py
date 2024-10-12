@@ -56,7 +56,7 @@ def q1(): #caesar cypher shifted by 11
             typestring(">> The switches are slightly misaligned, as though they were shifted or tampered with. ")
             typestring(">> The candles flicker gently, casting eerie shadows that dance across a familiar diagram, one of a logic circuit.")
         else:
-            typestring("That doesn't make any sense. Maybe I should reconsider my approach.", 0.5)
+            typestring("That doesn't make any sense. Maybe I should reconsider my approach. The answer might be important.", 0.5)
     q2()
 
 def q2():
@@ -64,7 +64,9 @@ def q2():
     typestring("If the output is seventeen, how should the switches be toggled?")
     while True:
         response = input('Code 2 : ')
-        if response == 'dummycode':
+        if response == '10010101':
+            typestring(">> The switches slowly move into the rock face letting out electrical sparks.")
+            typestring(">> A faint sound of some machine activating fills the room.")
             break
         else:
             typestring(">> Carefully adjusting the switches causes a low spark that dies out slowly, that doesn't seem right, I should rethink this", 0.5)
