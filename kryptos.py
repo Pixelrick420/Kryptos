@@ -26,26 +26,27 @@ def start(): #call this function after printing guidelines
     typestring(">> Mission log: Vault 71") #some story line that gives hint for the first clue
     typestring(">> We cannot continue further without access to the core. The bossman said it was built by [REDACTED].")
     typestring(">> This vault wasn't built to keep people out, but to keep [REDACTED] in")
-    typestring(">> They left us some messages to decrypt. This one seems shifted.")
+    typestring(">> Opening the door requires a pin.")
     q0()
 
 
-    
-
 def q0(): # Math ,Number of trailing zeros in 75P45
+    print("\n")
     typestring("Number of trailing zeros in ⁷⁵P₄₅")
     while True:
 
-            response = input('Code 0:')
+            response = input('Code 0 : ')
             if response == '11':
-                typestring(">> The numbers bow before your will, But do the letters do so?")
+                typestring(">> A low hum fills the room accompanied by the grinding of metal as colossal gears engage with a slow, deliberate clunk, opening the vault door")
                 break
             else:
                 typestring(">> Whoa, wrong input... the system's rejecting it.")
-
     q1()
 
-def q1(): #caesar cypher shifted by 11 that has to be bruteforced (example qn, may change)
+def q1(): #caesar cypher shifted by 11
+    print("\n")
+    typestring(">> Looks like someone's been here before. There are cryptic symbols etched onto the walls.")
+    typestring(">> This one seems shifted. Maybe the pin has something to do with it.")
     typestring("PYEPCESPNLELNZXMD")
     while True:
         response = input('Code 1 : ')
