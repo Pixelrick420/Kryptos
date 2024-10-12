@@ -60,7 +60,7 @@ def q1(): #caesar cypher shifted by 11
             typestring(">> That doesn't make any sense. Maybe I should reconsider my approach. The answer might be important.", slowtime)
     q2()
 
-def q2():
+def q2(): #logic circuit
     typestring(">> If the output is seventeen, how should the switches be toggled?")
     while True:
         response = input('Code 2 : ')
