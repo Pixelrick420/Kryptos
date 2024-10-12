@@ -33,11 +33,11 @@ def start(): #call this function after printing guidelines
     
 
 def q0(): # Math ,Number of trailing zeros in 75P45
-    typestring("Number of trailing zeros in 75P45")
+    typestring("Number of trailing zeros in ⁷⁵P₄₅")
     while True:
 
-            response = int(input('Code 0:'))
-            if response == 11:
+            response = input('Code 0:')
+            if response == '11':
                 typestring(">> The numbers bow before your will, But do the letters do so?")
                 break
             else:
