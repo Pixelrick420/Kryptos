@@ -14,14 +14,15 @@ def typestring(text, delay=0.01): #use this function to add type animation to st
 slowtime = 0.05 #give this as delay for wrong answer so that they can't bruteforce 
 
 #guidelines
-'''Guidelines 
-        1. This contest is open to lone wolves or teams of upto 3 participants. 
-        2. A registration fee of ₹50 per head is required.
-        3. This is an event that focuses on the overall technical skillset of a team.
-        4. There will be a set of __ challenges which will be based on Cryptography, Logical gates, Coding and DSA.
-        5. Unlocking one challenge opens up the hint or key to the other.
-        6. It is an entirely offline event, and no access to mobile phone, or internet will be allowed during the game.
-        7. Decision of judges will be final and binding.'''  #this should be formatted and shortened to be printed at the begining of the event
+print("\n")
+guidelines = '''GUIDELINES
+        1. The teams will have to complete 5 challenges which will be based on Cryptography, Logic gates, Coding and/or DSA.
+        2. The challenges require the players to find a code/answer and type it into the console. 
+        3. After completing a challenge, please inform the nearest volunteer. This is to ensure that there are no ties.
+        4. The time limit for the event is 3 hours. 
+        5. This is an entirely offline event, and no access to mobile phone, or internet will be allowed during the game.
+        6. Decision of judges will be final and binding.'''  
+print(guidelines + "\n\n")
 
 def start(): #call this function after printing guidelines
     typestring("WELCOME TO KRYPTOS") 
@@ -61,7 +62,7 @@ def q1(): #caesar cypher shifted by 11
     q2()
 
 def q2(): #logic circuit
-    typestring(">> If the output is seventeen, how should the switches be toggled?")
+    typestring(">> If the output is to be seventeen, how must the switches be toggled?")
     while True:
         response = input('Code 2 : ')
         if response == '10010101':
