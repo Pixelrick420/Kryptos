@@ -51,11 +51,12 @@ def q1(): #caesar cypher shifted by 11
     while True:
         response = input('Code 1 : ')
         if response == 'THEOUTPUTISSEVENTEEN':
-            typestring(">> A series of dim candles light illuminating 8 switches that line the bottom of the ancient stone wall.")
-            typestring(">> The switches seem slightly misaligned, like they were shifted or tampered with. ")
+            typestring(">> One of our agents slants against the wall causing a rock next to the engraving to slide inwards.")
+            typestring(">> A series of dim candles light illuminating 8 switches that line the bottom of the opposing stone wall.")
+            typestring(">> The switches are slightly misaligned, as though they were shifted or tampered with. ")
             typestring(">> The candles flicker gently, casting eerie shadows that dance across a familiar diagram, one of a logic circuit.")
         else:
-            typestring(">> Carefully adjusting the switches causes a low spark that dies out slowly, that doesn't seem right, I should rethink this", 0.5)
+            typestring("That doesn't make any sense. Maybe I should reconsider my approach.", 0.5)
     q2()
 
 def q2():
@@ -66,6 +67,6 @@ def q2():
         if response == 'dummycode':
             break
         else:
-            print('bruh cringe')
+            typestring(">> Carefully adjusting the switches causes a low spark that dies out slowly, that doesn't seem right, I should rethink this", 0.5)
 
 start()
