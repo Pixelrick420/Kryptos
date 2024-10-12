@@ -1,6 +1,7 @@
 #kryptos event source code
 import sys
 import time
+import math
 
 #typeanimation
 def typestring(text, delay=0.01): #use this function to add type animation to strings
@@ -28,24 +29,31 @@ def start(): #call this function after printing guidelines
     typestring(">> They left us some messages to decrypt. This one seems shifted.")
     q0()
 
-def q0(): #caesar cypher shifted by 11 that has to be bruteforced (example qn, may change)
+
+    
+
+def q0(): # Math ,Number of trailing zeros in 75P45
+    typestring("Number of trailing zeros in 75P45")
+    while True:
+
+            response = int(input('Code 0:'))
+            if response == 11:
+                typestring(">> The numbers bow before your will, But do the letters do so?")
+                break
+            else:
+                typestring(">> Whoa, wrong input... the system's rejecting it.")
+
+    q1()
+
+def q1(): #caesar cypher shifted by 11 that has to be bruteforced (example qn, may change)
     typestring("PYEPCESPNLELNZXMD")
     while True:
-        response = input('Code 0 : ')
+        response = input('Code 1 : ')
         if response == 'ENTERTHECATACOMBS':
             typestring(">> The next one might not be that easy")
             break
         else:
             typestring(">> That doesn't seem right, I should rethink this")
-    q1()
-    
-def q1():
-    while True:
-        response = input('Code 1 : ')
-        if response == 'dummycode':
-            break
-        else:
-            print('bruh cringe')
     q2()
 
 def q2():
