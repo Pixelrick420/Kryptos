@@ -26,7 +26,8 @@ print(guidelines + "\n\n")
 
 def start(): #call this function after printing guidelines
     typestring("WELCOME TO KRYPTOS") 
-    typestring(">> Mission log: Vault 71") #some story line that gives hint for the first clue
+    typestring(">> Mission log: Vault 71.") #some story line that gives hint for the first clue
+    typestring(">> Entry #12")
     typestring(">> We cannot continue further without access to the core. The bossman said it was built in 19XX by [REDACTED].")
     typestring(">> The vault door looks like it wasn't built to keep people out..... but to keep something in.")
     typestring(">> Opening the door requires a pin.")
@@ -52,7 +53,7 @@ def q1(): #caesar cypher shifted by 11
     while True:
         response = input('Code 1 : ')
         if response == 'THEOUTPUTISSEVENTEEN':
-            typestring(">> One of our agents slants against the wall causing a rock next to the engraving to slide inwards.")
+            typestring(">> One of our agents rests against the wall causing a rock next to the engraving to slide inwards.")
             typestring(">> A series of dim candles light illuminating 8 switches that line the bottom of the opposing stone wall.")
             typestring(">> The switches are slightly misaligned, as though they were shifted or tampered with. ")
             typestring(">> The candles flicker gently, casting eerie shadows that dance across a familiar diagram, one of a logic circuit.")
@@ -69,49 +70,50 @@ def q2(): #logic circuit
         if response == '10010101':
             typestring(">> The switches slowly move into the rock face letting out electrical sparks.")
             typestring(">> The faint sound of an ancient machine activating fills the room.")
+            typestring(">> The sound slowly becomes a thunderous rumble that causes the walls the shake.")
             break
         else:
             typestring(">> Carefully adjusting the switches causes a low spark that dies out slowly. That doesn't seem right, I should rethink this", slowtime)
     q3()
 
 def q3(): # Transposition Cipher
-    typestring(">> A hidden compartment slides open, revealing a metallic panel with tiles that form a scrambled message.")
-    typestring(">> After careful observation, the message appears to be:")
+    typestring(">> The rockface containing the switches falls forward with a loud thud revealing [REDACTED]")
+    typestring(">> The runes... this is how they kept their messages from falling into enemy hands")
+    typestring(">> This is why we are here. Vault 71 was where they kept it.")
+    typestring(">> The rumbling is getting louder. We have no time for causion.")
+    typestring(">> Agent 034 jumps forward, marginally avoiding a falling rock.")
+    typestring(">> We go deeper into the catacombs. There is no turning back.")
+    print("\n")
+    typestring("Entry #14")
+    typestring(">> We had lost all hope of escape...")
+    typestring(">> We found an exit. But ofcourse, it requires a pin.")
+    typestring(">> Carved into the opposing wall was a message.")
+    typestring("tuian in(*h   boec ) mslapst'*ibtita a *hotostt3 *andvifso''seidirtia*t ccnna d* rn oehnn*Wef,m h 1'")
 
-    typestring("")
-
-    typestring(">> It looks like the words are jumbled, but they form a question.")
     while True:
         response = input('Code 3 : ')
-        if response == '':
-            typestring(">> As you solve the puzzle, the tiles stop moving, locking into place.")
+        if response == "What is the number of distinct, valid combinations of parenthesis that contain 31 '(' and ')'":
             break
         else:
-            typestring(">> The tiles shift slightly, mocking the wrong answer. Maybe focus on the structure of the question itself.", slowtime)
+            typestring(">> That doesn't make sense... I should think again. This could be important.", slowtime)
     q4()
 
-def q4(): # DSA question involving Catalan numbers (in riddle form)
-    typestring(">> You walk down the newly revealed passage, where ancient carvings adorn the walls.")
-
+def q4(): # DSA question involving Catalan numbers 
+    typestring(">> The pin.")
     while True:
         response = input('Code 4 : ')
         if response == '4861946401452': # Catalan number for n=31
-            typestring(">> The carvings glow brighter, and the ground trembles as a section of the wall slides open.")
-            typestring(">> A blinding light pours in, revealing the final chamber.")
+            typestring(">> The carvings on the cave walls glow brighter, and the ground trembles as the rockface moves away.")
+            typestring(">> A blinding light pours in, revealing the overworld.")
             break
         else:
-            typestring(">> The carvings dim slightly, rejecting the incorrect answer. Symmetry must be maintained.", slowtime)
+            typestring(">> Incorrect. I should be careful. We can't risk another cave-in", slowtime)
     end()
 
 def end(): # Final part of the story
-    typestring(">> You step into the final chamber. In the center stands a grand mechanism, a fusion of ancient technology and cryptography.")
-    typestring(">> The mechanism hums with energy as you approach. As you input the final code, the gears click into place.")
-    typestring(">> The vault’s secret is finally revealed: a radiant core of knowledge, untouched for centuries.")
-    typestring(">> The mission is complete. You've not only unlocked the vault but uncovered the hidden legacy of Vault 71.")
-    typestring(">> The room falls silent, leaving you with a sense of accomplishment and mystery about what lies ahead.")
-    typestring(">> Congratulations! You've completed KRYPTOS.")
-    
-start()
-
+    print("\n")
+    typestring(">> Entry #19")
+    typestring(">> (some ending blah blah)")
+    typestring("Congratulations! You've completed KRYPTOS.")
     
 start()
