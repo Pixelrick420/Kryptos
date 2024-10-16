@@ -56,7 +56,7 @@ def q1(): #caesar cypher shifted by 11
             typestring(">> Output... of what?")
             print("\n")
             typestring(">> Entry #9")
-            typestring(">> We explored further, carefully navigating the fissures and cracks. Now me move to Section 06.")
+            typestring(">> We explored further, carefully navigating the fissures and cracks... that is untill Section 06.")
             typestring(">> One of our agents rests against the wall causing a rock next to the engraving to slide inwards.")
             typestring(">> A series of dim candles light illuminating 8 switches that line the bottom of the opposing stone wall.")
             typestring(">> The switches are slightly misaligned, as though they were shifted or tampered with. ")
