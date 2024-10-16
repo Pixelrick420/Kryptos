@@ -11,7 +11,7 @@ def typestring(text, delay=0.01): #use this function to add type animation to st
         time.sleep(delay)
     print() 
 
-slowtime = 0.05 #give this as delay for wrong answer so that they can't bruteforce 
+slowtime = 0.1 #give this as delay for wrong answer so that they can't bruteforce 
 
 #guidelines
 print("\n")
@@ -27,8 +27,8 @@ print(guidelines + "\n\n")
 def start(): #call this function after printing guidelines
     typestring("WELCOME TO KRYPTOS") 
     typestring(">> Mission log: Vault 71.") #some story line that gives hint for the first clue
-    typestring(">> Entry #12")
-    typestring(">> We cannot continue further without access to the core. The bossman said it was built in 19XX by [REDACTED].")
+    typestring(">> Entry #6")
+    typestring(">> We cannot continue further without access to the core. The bossman said it was built by [REDACTED].")
     typestring(">> The vault door looks like it wasn't built to keep people out..... but to keep something in.")
     typestring(">> Opening the door requires a pin.")
     q0()
@@ -43,7 +43,7 @@ def q0(): # Math: number of trailing zeros in 75P45
                 typestring(">> A low hum fills the room accompanied by the grinding of metal as colossal gears engage with a slow, deliberate clunk, opening the vault door")
                 break
             else:
-                typestring(">> Whoa, wrong input... the system's rejecting it. Maybe a different approach might be needed", slowtime)
+                typestring(">> Whoa, wrong input... the system's rejecting it.", slowtime)
     q1()
 
 def q1(): #caesar cypher shifted by 11
@@ -53,13 +53,18 @@ def q1(): #caesar cypher shifted by 11
     while True:
         response = input('Code 1 : ')
         if response == 'THEOUTPUTISSEVENTEEN':
+            typestring(">> Output... of what?")
+            print("\n")
+            typestring(">> Entry #9")
+            typestring(">> We explored further, carefully navigating the fissures and cracks. Now me move to Section 06.")
             typestring(">> One of our agents rests against the wall causing a rock next to the engraving to slide inwards.")
             typestring(">> A series of dim candles light illuminating 8 switches that line the bottom of the opposing stone wall.")
             typestring(">> The switches are slightly misaligned, as though they were shifted or tampered with. ")
             typestring(">> The candles flicker gently, casting eerie shadows that dance across a familiar diagram, one of a logic circuit.")
+            typestring(">> I think we may have the answer to that question.")
             break
         else:
-            typestring(">> That doesn't make any sense. Maybe I should reconsider my approach. The answer might be important.", slowtime)
+            typestring(">> That doesn't make any sense. Maybe I should reconsider my approach.", slowtime)
     q2()
 
 def q2(): #logic circuit
