@@ -68,9 +68,55 @@ def q2(): #logic circuit
         response = input('Code 2 : ')
         if response == '10010101':
             typestring(">> The switches slowly move into the rock face letting out electrical sparks.")
-            typestring(">> A faint sound of some machine activating fills the room.")
+            typestring(">> The faint sound of an ancient machine activating fills the room.")
             break
         else:
             typestring(">> Carefully adjusting the switches causes a low spark that dies out slowly. That doesn't seem right, I should rethink this", slowtime)
+    q3()
 
+def q3(): # Transposition Cipher
+    typestring(">> A hidden compartment slides open, revealing a metallic panel with tiles that form a scrambled message.")
+    typestring(">> After careful observation, the message appears to be:")
+
+    typestring("LCELOF UOCTNS HNIANG TIOTEK QNSEUO")
+
+    typestring(">> It looks like the words are jumbled, but they form a question.")
+    while True:
+        response = input('Code 3 : ')
+        if response == 'FUNCTION THAT TAKES A NUMBER N AND COUNTS VALID PARENTHESIS EXPRESSIONS':
+            typestring(">> As you solve the puzzle, the tiles stop moving, locking into place.")
+            typestring(">> A faint rumbling noise is heard, and the panel slides away to reveal another passage.")
+            typestring(">> The path ahead looks ominous, but there's no turning back.")
+            break
+        else:
+            typestring(">> The tiles shift slightly, mocking the wrong answer. Maybe focus on the structure of the question itself.", slowtime)
+    q4()
+
+def q4(): # DSA question involving Catalan numbers (in riddle form)
+    typestring(">> You walk down the newly revealed passage, where ancient carvings adorn the walls.")
+    typestring(">> One carving stands out, glowing faintly. It's a riddle:")
+    typestring(">> 'In a world of gates, if thirty-one's the key, how many ways can you balance symmetry?'")
+    typestring(">> It's clear that the riddle is asking for something more complex, something that involves structure and balance...")
+
+    while True:
+        response = input('Code 4 : ')
+        if response == '4861946401452': # Catalan number for n=31
+            typestring(">> The carvings glow brighter, and the ground trembles as a section of the wall slides open.")
+            typestring(">> A blinding light pours in, revealing the final chamber.")
+            break
+        else:
+            typestring(">> The carvings dim slightly, rejecting the incorrect answer. Symmetry must be maintained.", slowtime)
+    end()
+
+def end(): # Final part of the story
+    typestring(">> You step into the final chamber. In the center stands a grand mechanism, a fusion of ancient technology and cryptography.")
+    typestring(">> The mechanism hums with energy as you approach. As you input the final code, the gears click into place.")
+    typestring(">> The vault’s secret is finally revealed: a radiant core of knowledge, untouched for centuries.")
+    typestring(">> The mission is complete. You've not only unlocked the vault but uncovered the hidden legacy of Vault 71.")
+    typestring(">> The room falls silent, leaving you with a sense of accomplishment and mystery about what lies ahead.")
+    typestring(">> Congratulations! You've completed KRYPTOS.")
+    
+start()
+
+    
 start()
