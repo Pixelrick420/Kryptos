@@ -34,7 +34,7 @@ def start(): #call this function after printing guidelines
     q0()
 
 
-def q0(): # Math ,Number of trailing zeros in 75P45
+def q0(): # Math: number of trailing zeros in 75P45
     typestring("Number of trailing zeros in ⁷⁵P₄₅")
     while True:
 
