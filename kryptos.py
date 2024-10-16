@@ -78,15 +78,13 @@ def q3(): # Transposition Cipher
     typestring(">> A hidden compartment slides open, revealing a metallic panel with tiles that form a scrambled message.")
     typestring(">> After careful observation, the message appears to be:")
 
-    typestring("LCELOF UOCTNS HNIANG TIOTEK QNSEUO")
+    typestring("")
 
     typestring(">> It looks like the words are jumbled, but they form a question.")
     while True:
         response = input('Code 3 : ')
-        if response == 'FUNCTION THAT TAKES A NUMBER N AND COUNTS VALID PARENTHESIS EXPRESSIONS':
+        if response == '':
             typestring(">> As you solve the puzzle, the tiles stop moving, locking into place.")
-            typestring(">> A faint rumbling noise is heard, and the panel slides away to reveal another passage.")
-            typestring(">> The path ahead looks ominous, but there's no turning back.")
             break
         else:
             typestring(">> The tiles shift slightly, mocking the wrong answer. Maybe focus on the structure of the question itself.", slowtime)
@@ -94,9 +92,6 @@ def q3(): # Transposition Cipher
 
 def q4(): # DSA question involving Catalan numbers (in riddle form)
     typestring(">> You walk down the newly revealed passage, where ancient carvings adorn the walls.")
-    typestring(">> One carving stands out, glowing faintly. It's a riddle:")
-    typestring(">> 'In a world of gates, if thirty-one's the key, how many ways can you balance symmetry?'")
-    typestring(">> It's clear that the riddle is asking for something more complex, something that involves structure and balance...")
 
     while True:
         response = input('Code 4 : ')
