@@ -4,7 +4,7 @@ import time
 import math
 
 #typeanimation
-def typestring(text, delay=0.01): #use this function to add type animation to strings
+def typestring(text, delay=0.03): #use this function to add type animation to strings
     for char in text:
         sys.stdout.write(char)
         sys.stdout.flush()
@@ -18,10 +18,11 @@ print("\n")
 guidelines = '''GUIDELINES
         1. The teams will have to complete 5 challenges which will be based on Cryptography, Logic gates, Coding and/or DSA.
         2. The challenges require the players to find a code/answer and type it into the console. 
-        3. After completing a challenge, please inform the nearest volunteer. This is to ensure that there are no ties.
+        3. After completing a challenge, please inform the nearest volunteer. The winners will be decided based on whoever completes the challenges the fastest.
         4. The time limit for the event is 3 hours. 
-        5. This is an entirely offline event, and no access to mobile phone, or internet will be allowed during the game.
-        6. Decision of judges will be final and binding.'''  
+        5. No access to mobile phone, or internet will be allowed during the game.
+        6. You can ask for hints if you feel stuck, but these will result in negative marks and may affect your final time.
+        7. Decision of judges will be final and binding.'''  
 print(guidelines + "\n\n")
 
 def start(): #call this function after printing guidelines
@@ -40,7 +41,7 @@ def q0(): # Math: number of trailing zeros in 75P45
 
             response = input('Code 0 : ')
             if response == '11':
-                typestring(">> A low hum fills the room accompanied by the grinding of metal as colossal gears engage with a slow, deliberate clunk, opening the vault door")
+                typestring(">> A low hum fills the room accompanied by the grinding of metal as colossal gears engage with a slow, deliberate clunk, opening the vault door.")
                 break
             else:
                 typestring(">> Whoa, wrong input... the system's rejecting it.", slowtime)
@@ -56,15 +57,15 @@ def q1(): #caesar cypher shifted by 11
             typestring(">> Output... of what?")
             print("\n")
             typestring(">> Entry #9")
-            typestring(">> We explored further, carefully navigating the fissures and cracks... that is untill Section 06.")
-            typestring(">> One of our agents rests against the wall causing a rock next to the engraving to slide inwards.")
-            typestring(">> A series of dim candles light illuminating 8 switches that line the bottom of the opposing stone wall.")
+            typestring(">> Bossman told us to take a closer look at section 06. Navigating the fissures and cracks has become arduous.")
+            typestring(">> One of our agents leaned against the wall causing a rock next to the engraving to slide inwards.")
+            typestring(">> A series of dim candles light, illuminating 8 switches that line the bottom of the opposing stone wall.")
             typestring(">> The switches are slightly misaligned, as though they were shifted or tampered with. ")
-            typestring(">> The candles flicker gently, casting eerie shadows that dance across a familiar diagram, one of a logic circuit.")
+            typestring(">> The candles flicker gently, casting eerie shadows that dance across a familiar diagram, one of a logic circuit. [circuit.jpg]")
             typestring(">> I think we may have the answer to that question.")
             break
         else:
-            typestring(">> That doesn't make any sense. Maybe I should reconsider my approach.", slowtime)
+            typestring(">> That doesn't make any sense. I should reconsider.", slowtime)
     q2()
 
 def q2(): #logic circuit
@@ -82,53 +83,56 @@ def q2(): #logic circuit
     q3()
 
 def q3(): # Transposition Cipher
-    typestring(">> The rockface containing the switches falls forward with a loud thud revealing [REDACTED]")
-    typestring(">> The runes... this is how they kept their messages from falling into enemy hands")
-    typestring(">> This is why we are here. Vault 71 was where they kept it.")
+    typestring(">> The rockface containing the switches falls forward with a loud thud.")
+    typestring(">> Agent 034 jumps forward, marginally avoiding the falling rock.")
+    typestring(">> His face, illuminated by a warm golden light emitted by he newly exposed wall behind the fallen rockface.")
+    typestring(">> Deep cracks crisscross the stone, yet the ancient writing carved into it remains pristine, untouched by the erosion that has worn down the rest of the wall.")
+    typestring(">> The runes[rune.py]... this is how they kept their messages from falling into enemy hands")
     typestring(">> The rumbling is getting louder. We have no time for causion.")
-    typestring(">> Agent 034 jumps forward, marginally avoiding a falling rock.")
     typestring(">> We go deeper into the catacombs. There is no turning back.")
     print("\n")
     typestring("Entry #14")
-    typestring(">> We had lost all hope of escape...")
-    typestring(">> We found an exit. But ofcourse, it requires a pin.")
-    typestring(">> Carved into the opposing wall was a message.")
+    typestring(">> The way to reach the core remained elusive... until we found the gate.")
+    typestring(">> We were exploring section 08 when we saw it. a towering, ancient structure made of thick, dark metal, its surface etched with intricate runes and symbols from a forgotten age.")
+    typestring(">> The metal is worn and slightly rusted yet impenetrable. The gate requires a pin.")
+    typestring(">> Carved into the opposing wall was a message. Maybe it was left by [REDACTED].")
     typestring("tuian in(*h   boec ) mslapst'*ibtita a *hotostt3 *andvifso''seidirtia*t ccnna d* rn oehnn*Wef,m h 1'")
 
     while True:
         response = input('Code 3 : ')
         if response == "What is the number of distinct, valid combinations of parenthesis that contain 31 '(' and ')'":
+            print("""Example : Consider a string with 3 '(' and ')'.There are 5 distinct valid combinations.
+                        - ((()))
+                        - (())()
+                        - ()(())
+                        - ()()()
+                        - (()()) 
+                  """)
             break
         else:
-            typestring(">> That doesn't make sense... I should think again. This could be important.", slowtime)
+            typestring(">> No... that can't be it. There must be something more.", slowtime)
     q4()
 
 def q4(): # DSA question involving Catalan numbers 
-    typestring(">> The pin.")
+    typestring(">> Ofcourse.. the pin.")
     while True:
         response = input('Code 4 : ')
         if response == '4861946401452': # Catalan number for n=31
             break
         else:
-            typestring(">> Incorrect. I should be careful. We can't risk another cave-in", slowtime)
+            typestring(">> Incorrect. I should be careful. We can't afford any mustakes.", slowtime)
     end()
 
 def end(): # Final part of the story
     print("\n")
-    typestring(">> The vault door slowly grinds open, revealing a massive chamber filled with intricate carvings and symbols of a forgotten time.")
-    typestring(">> In the center of the room lies an ancient artifact, glowing faintly, casting eerie shadows across the room.")
+    typestring(">> The gate slowly grinds open, revealing a massive chamber filled with intricate carvings and encrypted writing.")
+    typestring(">> In the center of the room lies the ancient artifact, glowing. The light flowing in strange, twisting patterns that seem almost alive.")
     typestring(">> This is it... the artifact we've been searching for. The source of all the encrypted messages, the one they swore to protect at all costs.")
-    typestring(">> A faint voice echoes in the chamber. It's the last log entry from the previous team that tried and failed.")
-    typestring(">> 'We weren't meant to find this,' it whispers.")
-    typestring(">> You and your team exchange glances, knowing that what you've uncovered goes beyond just a simple cryptographic challenge.")
-    typestring(">> As you reach for the artifact, the room shakes violently, the walls seem to close in, and the light dims.")
-    typestring(">> Just as the world around you begins to collapse, you grab the artifact, and everything goes silent.")
-    typestring(">> You did it. You've unlocked the secrets of Vault 71.")
-    typestring(">> The overworld reveals itself, a world that's been changed forever by your discovery.")
+    typestring(">> A torn piece of paper lies on the floor next to the artifact. It's the last log entry from the previous team that was sent here.")
+    typestring(">> 'We weren't meant to find this'", slowtime)
+    typestring(">> They never returned...")
     print("\n")
+    time.sleep(3)
     typestring("CONGRATULATIONS! You've completed KRYPTOS.")
-    typestring(">> You and your team have secured your place in history.")
-    typestring(">> But some mysteries are better left unsolved... for now.")
-    typestring(">> The End.")
     
 start()
