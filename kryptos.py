@@ -108,8 +108,6 @@ def q4(): # DSA question involving Catalan numbers
     while True:
         response = input('Code 4 : ')
         if response == '4861946401452': # Catalan number for n=31
-            typestring(">> The carvings on the cave walls glow brighter, and the ground trembles as the rockface moves away.")
-            typestring(">> A blinding light pours in, revealing the overworld.")
             break
         else:
             typestring(">> Incorrect. I should be careful. We can't risk another cave-in", slowtime)
@@ -117,7 +115,6 @@ def q4(): # DSA question involving Catalan numbers
 
 def end(): # Final part of the story
     print("\n")
-    typestring(">> Entry #19")
     typestring(">> The vault door slowly grinds open, revealing a massive chamber filled with intricate carvings and symbols of a forgotten time.")
     typestring(">> In the center of the room lies an ancient artifact, glowing faintly, casting eerie shadows across the room.")
     typestring(">> This is it... the artifact we've been searching for. The source of all the encrypted messages, the one they swore to protect at all costs.")
