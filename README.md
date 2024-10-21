@@ -6,7 +6,7 @@ The game is designed to be played within a time limit, encouraging problem-solvi
 
 ---
 
-## **How to Play**
+### **How to Play**
 
 The game involves 5 progressive challenges. Each stage will give hints in the form of a story, guiding you through the process while maintaining an immersive, puzzle-driven narrative.
 To run the game, download the kryptos.exe file given in the dist folder and execute it in your system.
