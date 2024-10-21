@@ -89,7 +89,7 @@ def q3(): # Transposition Cipher
     typestring(">> His face, illuminated by a warm golden light emitted by he newly exposed wall behind the fallen rockface.")
     typestring(">> Deep cracks crisscross the stone, yet the ancient writing carved into it remains pristine, untouched by the erosion that has worn down the rest of the wall.")
     typestring(">> The runes[rune.py]... this is how they kept their messages from falling into enemy hands")
-    typestring(">> The rumbling is getting louder. We have no time for causion.")
+    typestring(">> The rumbling is getting louder. We have no time for caution.")
     typestring(">> We go deeper into the catacombs. There is no turning back.")
     print("\n")
     typestring("Entry #14")
