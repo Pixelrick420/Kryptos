@@ -25,3 +25,9 @@ No additional installations are required to run it.
 If you'd like to explore the source code or customize the game, the following Python packages are required:
 ```bash
 pip install math
+```
+
+To convert the Python script to an executable (.exe) using PyInstaller:
+```bash
+pyinstaller --onefile kryptos.py
+```
