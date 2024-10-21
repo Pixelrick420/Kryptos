@@ -117,7 +117,7 @@ def q4(): # DSA question involving Catalan numbers
     typestring(">> Ofcourse.. the pin.")
     while True:
         response = input('Code 4 : ')
-        if response == '4861946401452': # Catalan number for n=31
+        if response == '14428278950913093728': # Catalan number for n=31
             break
         else:
             typestring(">> Incorrect. I should be careful. We can't afford any mustakes.", slowtime)
