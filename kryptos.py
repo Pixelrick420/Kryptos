@@ -22,7 +22,8 @@ guidelines = '''GUIDELINES
         4. The time limit for the event is 3 hours. 
         5. No access to mobile phone, or internet will be allowed during the game.
         6. You can ask for hints if you feel stuck, but these will result in negative marks and may affect your final time.
-        7. Decision of judges will be final and binding.'''  
+        7. Decision of judges will be final and binding.
+        '''  
 print(guidelines + "\n\n")
 
 def start(): #call this function after printing guidelines
@@ -117,7 +118,7 @@ def q4(): # DSA question involving Catalan numbers
     typestring(">> Ofcourse.. the pin.")
     while True:
         response = input('Code 4 : ')
-        if response == '14428278950913093728': # Catalan number for n=31
+        if response == '14544636039226909': # Catalan number for n=31
             break
         else:
             typestring(">> Incorrect. I should be careful. We can't afford any mustakes.", slowtime)
