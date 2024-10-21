@@ -4,6 +4,8 @@
 
 The game is designed to be played within a time limit, encouraging problem-solving and cryptographic analysis. Players are recommended **not to cheat** by looking up answers online and rely on their skills instead.
 
+---
+
 ## **How to Play**
 
 The game involves 5 progressive challenges. Each stage will give hints in the form of a story, guiding you through the process while maintaining an immersive, puzzle-driven narrative.
